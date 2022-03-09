@@ -16,7 +16,7 @@ import { RemoverComponent } from './remover/remover.component';
 export class FuncionariosComponent implements OnInit {
 
   funcionarios$: Observable<Funcionario[]>;
-  displayedColumns = ["name", "cpf", "telefone", "cargo", "salario", "dtaFuncionario", "actions"];
+  displayedColumns = ["name", "cpf", "telefone", "cargo", "setor", "salario", "dtaFuncionario", "actions"];
 
 
   constructor(

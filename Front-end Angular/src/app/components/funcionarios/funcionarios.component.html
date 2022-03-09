@@ -27,10 +27,15 @@
           <td mat-cell *matCellDef="let funcionario"> {{funcionario.telefone}} </td>
         </ng-container>
 
-        <!-- Coluna cargo -->
+        <!-- Coluna cargo nome -->
         <ng-container matColumnDef="cargo">
           <th mat-header-cell *matHeaderCellDef> Cargo </th>
           <td mat-cell *matCellDef="let funcionario"> {{funcionario.cargo.nomeCargo}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="setor">
+          <th mat-header-cell *matHeaderCellDef> Setor </th>
+          <td mat-cell *matCellDef="let funcionario"> {{funcionario.cargo.setor}} </td>
         </ng-container>
 
         <!-- Coluna salario -->
