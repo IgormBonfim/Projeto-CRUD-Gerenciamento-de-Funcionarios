@@ -13,11 +13,14 @@
 - [ ] Organizar Funcionários por ordem alfabética
 - [ ] Buscar Funcionários
 
-===========================================================================
-
 - [x] Cadastrar Cargo
 - [x] listar Cargos
 - [x] Atualizar Cargos
 - [x] Excluir Cargos
 - [ ] Organizar Cargos por ordem alfabética
 - [ ] Buscar Cargos
+
+===========================================================================
+<h1>
+    <img src="./Imagens Readme/telafuncionarios.png">
+</h1>

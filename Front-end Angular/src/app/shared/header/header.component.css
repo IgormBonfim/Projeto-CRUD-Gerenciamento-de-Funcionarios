@@ -3,6 +3,12 @@
   font-size: 20px;
 }
 
+.barra {
+  padding: 10px;
+  color: white;
+  font-size: 35px;
+}
+
 .menu-header {
   display: flex;
   flex-wrap: wrap;
