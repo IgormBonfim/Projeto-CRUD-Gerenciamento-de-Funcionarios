@@ -9,6 +9,8 @@
 - [x] Atualizar Funcionário
 - [x] Excluir Funcionário
 
+===============================
+
 - [x] Cadastrar Cargo
 - [x] listar Cargos
 - [x] Atualizar Cargos
