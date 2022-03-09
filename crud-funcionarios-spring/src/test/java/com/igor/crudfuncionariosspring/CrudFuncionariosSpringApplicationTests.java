@@ -1,10 +1,10 @@
-package com.igor.apifuncionarios;
+package com.igor.crudfuncionariosspring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiGerenciamentoDeFuncionariosApplicationTests {
+class CrudFuncionariosSpringApplicationTests {
 
 	@Test
 	void contextLoads() {
