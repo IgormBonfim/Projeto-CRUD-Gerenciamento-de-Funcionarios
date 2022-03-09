@@ -1,0 +1,45 @@
+<div class="container">
+  <mat-toolbar color="primary">
+    <span>Sistema de cadastro de cargos</span>
+  </mat-toolbar>
+
+  <mat-card>
+    <form [formGroup]="formCargo">
+      <mat-grid-list cols="2" rowHeight="70px">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Cargo</mat-label>
+            <input formControlName="nomeCargo" matInput autocomplete="off">
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Setor</mat-label>
+            <input formControlName="setor" matInput autocomplete="off">
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Permissões</mat-label>
+            <mat-select formControlName="perm">
+              <mat-option *ngFor="let item of perms" [value]="item">
+                {{item}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <button (click)="onCancel()" mat-raised-button style="width: 150px;">Cancelar</button>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <button type="submit" [disabled]="formCargo.invalid" (click)="onSubmit()" mat-raised-button style="width: 150px;" color="primary">Cadastrar</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+  </mat-card>
+
+</div>

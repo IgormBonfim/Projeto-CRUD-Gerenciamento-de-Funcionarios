@@ -1,0 +1,15 @@
+<div>
+  <div class="content-container">
+    <div class="text">
+      Tem certeza que deseja remover o cargo:
+    </div>
+    <div class="data" color="red">{{data.nomeCargo}} ({{data.setor}})?</div>
+    <div class="botoes">
+      <div mat-dialog-actions>
+        <button mat-raised-button [mat-dialog-close]="false">Cancelar</button>
+        <span class="espaco"></span>
+        <button mat-raised-button color="warn" [mat-dialog-close]="true">Remover</button>
+      </div>
+    </div>
+  </div>
+</div>

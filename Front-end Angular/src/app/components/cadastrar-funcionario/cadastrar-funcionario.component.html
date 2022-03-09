@@ -1,0 +1,63 @@
+<div class="container">
+  <mat-toolbar color="primary">
+    <span>Sistema de cadastro de funcionários</span>
+  </mat-toolbar>
+
+  <mat-card>
+    <form [formGroup]="formCadastro">
+      <mat-grid-list cols="4" rowHeight="70px">
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Nome Completo</mat-label>
+            <input matInput formControlName="name" required minlength="5">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="4">
+          <img src="../././assets/funcionario.png" alt="Imagem Funcionario" width="250" height="250">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>CPF</mat-label>
+            <input matInput formControlName="cpf" type="number">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Telefone</mat-label>
+            <input matInput formControlName="telefone" type="number">
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Cargo</mat-label>
+            <mat-select formControlName="cargo">
+              <mat-option *ngFor="let item of cargos" [value]="item">
+                {{item.nomeCargo}} ({{item.setor}})
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <mat-form-field class="campo" appearance="fill" floatLabel="always">
+            <mat-label>Salário</mat-label>
+            <input matInput formControlName="salario" placeholder="0" type="number" class="example-right-align" >
+            <span matPrefix>R$&nbsp;</span>
+            <span matSuffix>,00</span>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <mat-form-field class="campo" appearance="fill">
+            <mat-label>Data de admissão</mat-label>
+            <input matInput type="date" formControlName="dtaFuncionario">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <button (click)="onCancel()" mat-raised-button style="width: 150px;">Cancelar</button>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" rowspan="1">
+          <button type="submit" [disabled]="formCadastro.invalid" (click)="onSubmit()" mat-raised-button style="width: 200px;" color="primary">Salvar</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+  </mat-card>

@@ -1,0 +1,11 @@
+[
+  {
+    "id":"1",
+    "name": "Igor Bonfim",
+    "cpf": "128.565.347-59",
+    "telefone": "(27) 99518-7162",
+    "cargo": "Desenvolvedor Junior",
+    "salario": "R$ 3500,00",
+    "dtaFuncionario": "19/02/2022"
+  }
+]

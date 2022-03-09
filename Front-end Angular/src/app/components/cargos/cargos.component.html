@@ -1,0 +1,67 @@
+<mat-card>
+
+  <mat-toolbar color="primary">
+    <span>Cargos</span>
+    <span style="flex: 1 1 auto;"></span>
+    <button mat-raised-button routerLink="cadastrar">Cadastrar Cargo</button>
+  </mat-toolbar>
+
+  <div *ngIf="cargos$ | async as cargos; else loading">
+
+    <table mat-table [dataSource]="cargos" class="mat-elevation-z8" aria-describedby="tabela de cargos">
+
+
+      <!-- Coluna Nome -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Cargo </th>
+        <td mat-cell *matCellDef="let cargo"> {{cargo.nomeCargo}} </td>
+      </ng-container>
+
+      <!-- Coluna Setor -->
+      <ng-container matColumnDef="setor">
+        <th mat-header-cell *matHeaderCellDef> Setor </th>
+        <td mat-cell *matCellDef="let cargo"> {{cargo.setor}} </td>
+      </ng-container>
+
+      <!-- Coluna Data -->
+      <ng-container matColumnDef="dtaCargo">
+        <th mat-header-cell *matHeaderCellDef> Data de criação </th>
+        <td mat-cell *matCellDef="let cargo"> {{cargo.dtaCargo}} </td>
+      </ng-container>
+
+      <!-- Coluna Permissão -->
+      <ng-container matColumnDef="perm">
+        <th mat-header-cell *matHeaderCellDef> Permissões </th>
+        <td mat-cell *matCellDef="let cargo"> {{cargo.perm}} </td>
+      </ng-container>
+
+      <!-- Coluna Espaço -->
+      <ng-container matColumnDef="espaco">
+        <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let cargo">  </td>
+      </ng-container>
+
+      <!-- Coluna Ações -->
+      <ng-container matColumnDef="actions">
+        <th class="w th-center" mat-header-cell *matHeaderCellDef> Ações </th>
+        <td mat-cell *matCellDef="let cargo">
+          <button mat-icon-button color="primary" (click)="onEdit(cargo.id)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" (click)="onRemove(cargo)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
+    <ng-template #loading>
+      <div class="loading-spinner">
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
+</mat-card>
