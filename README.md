@@ -1,8 +1,6 @@
 # Projeto CRUD Gerenciamento de Funcionários
 
-<p>Projeto CRUD de gerenciamento de funcionários desenvolvido com Angular, Spring e MySQL. Com fins de desenvolvimento pessoal</p> 
-
-### Tecnologias utilizadas
+## Stack:
 
 * TypeScript
 * Angular
@@ -97,7 +95,9 @@
 
 ===========================================================================
 
-## Pré-requisitos
+## Teste o projeto
+
+### Pré-requisitos
 
 Os pré-requisitos necessários para executar o projeto são:
 
