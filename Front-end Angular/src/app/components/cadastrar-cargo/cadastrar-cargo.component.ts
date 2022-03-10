@@ -65,7 +65,6 @@ export class CadastrarCargoComponent implements OnInit {
           sucess => {
             console.log("Cargo cadastrado");
             console.log(this.formCargo.value);
-            this.location.back();
             this.openDialog("Cargo cadastrado com sucesso.");
           }
         )

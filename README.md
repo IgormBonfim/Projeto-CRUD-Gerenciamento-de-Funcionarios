@@ -46,8 +46,14 @@
     <img src="./Imagens Readme/removerfuncionario.gif">
 </h1>
 
-### Tentando cadastrar funcionário com CPF já utilizado
+### Tentando cadastrar funcionário com CPF já cadastrado
 
 <h1>
     <img src="./Imagens Readme/cpfunico.gif">
+</h1>
+
+### Cadastrando novo cargo
+
+<h1>
+    <img src="./Imagens Readme/cadastrarcargo.gif">
 </h1>
