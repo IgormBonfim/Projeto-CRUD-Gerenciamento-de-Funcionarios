@@ -93,14 +93,14 @@
 
 ## Pré-requisitos
 
-Alguns pré-requisitos para executar o projeto são:
+Os pré-requisitos necessários para executar o projeto são:
 
-* Node.js
-* Java
-* Git
-* MySQL
+* [Node.js](https://nodejs.org/en/)
+* [Java](https://www.oracle.com/java/technologies/downloads/#jdk17-windows)
+* [Git](https://git-scm.com/downloads)
+* [MySQL](https://dev.mysql.com/downloads/installer/)
 
-Além disso:
+Além disso também será necessário:
 
 * Um editor de texto
 * Uma IDE para rodar a API
@@ -110,21 +110,6 @@ Além disso:
 ```bash
 # Clone o repositorio
 $ git clone <https://github.com/IgormBonfim/Projeto-CRUD-Gerenciamento-de-Funcionarios.git>
-```
-
-### Rodando o Front-End
-
-```bash
-# Acesse a pasta do projeto no terminal
-$ cd Front-end Angular
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação no modo de desenvolvimento
-$ npm run start
-
-# O servidor iniciará na porta padrão:4200 - acesse <http://localhost:4200>
 ```
 
 ### Rodando a API
@@ -168,3 +153,19 @@ spring.jpa.hibernate.ddl-auto=update
 ```
 
 * Execute a API;
+
+
+### Rodando o Front-End
+
+```bash
+# Acesse a pasta do projeto no terminal
+$ cd Front-end Angular
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação no modo de desenvolvimento
+$ npm run start
+
+# O servidor iniciará na porta padrão:4200 - acesse <http://localhost:4200>
+```
