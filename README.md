@@ -39,3 +39,15 @@
 <h1>
     <img src="./Imagens Readme/atualizarfuncionario.gif">
 </h1>
+
+### Removendo funcionário
+
+<h1>
+    <img src="./Imagens Readme/removerfuncionario.gif">
+</h1>
+
+### Tentando cadastrar funcionário com CPF já utilizado
+
+<h1>
+    <img src="./Imagens Readme/cpfunico.gif">
+</h1>

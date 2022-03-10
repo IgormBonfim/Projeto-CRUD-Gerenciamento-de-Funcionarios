@@ -1,3 +1,4 @@
+import { ErrorDialogComponent } from './../../shared/components/error-dialog/error-dialog.component';
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -68,13 +69,13 @@ export class CadastrarFuncionarioComponent implements OnInit {
   validaCadastro() {
     for (let listaFuncionarios of this.listaFuncionarios) {
       if (listaFuncionarios.name == this.formCadastro.value.name) {
-        this.openDialog("Este Nome já está cadastrado no sistema.");
+        this.openDialogError("Este Nome já está cadastrado no sistema.");
         return false;
       }else if (listaFuncionarios.cpf == this.formCadastro.value.cpf) {
-        this.openDialog("Este CPF já está cadastrado no sistema.");
+        this.openDialogError("Este CPF já está cadastrado no sistema.");
         return false;
       }else if (listaFuncionarios.telefone == this.formCadastro.value.telefone) {
-        this.openDialog("Este Telefone já está cadastrado no sistema.");
+        this.openDialogError("Este Telefone já está cadastrado no sistema.");
         return false;
       }
     } return true;
@@ -83,6 +84,12 @@ export class CadastrarFuncionarioComponent implements OnInit {
   openDialog(subtmitDialog: string) {
     this.dialogSucess.open(SucessDialogComponent, {
       data: subtmitDialog
+    });
+  }
+
+  openDialogError(error: string) {
+    this.dialogSucess.open(ErrorDialogComponent, {
+      data:error
     });
   }
 
