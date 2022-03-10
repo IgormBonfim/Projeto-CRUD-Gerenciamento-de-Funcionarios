@@ -1,7 +1,5 @@
 # Projeto CRUD Gerenciamento de Funcionários
 
-===========================================================================
-
 * [Sobre](#Sobre)
 * [Funcionalidades](#funcionalidades)
 * [Teste o Projeto](#teste-o-projeto)
