@@ -1,6 +1,16 @@
 # Projeto CRUD Gerenciamento de Funcionários
 
-## Stack:
+===========================================================================
+
+* [Sobre](#Sobre)
+* [Funcionalidades](#funcionalidades)
+* [Teste o Projeto](#teste-o-projeto)
+
+===========================================================================
+
+##Sobre
+
+### Stack:
 
 * TypeScript
 * Angular
@@ -8,12 +18,6 @@
 * Java
 * Spring
 * MySQL
-
-===========================================================================
-
-* [Sobre](#Sobre)
-* [Funcionalidades](#funcionalidades)
-* [Teste o Projeto]()
 
 ===========================================================================
 
