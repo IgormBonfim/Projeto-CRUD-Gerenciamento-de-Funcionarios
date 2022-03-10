@@ -29,8 +29,6 @@
 - [ ] Organizar Cargos por ordem alfabética
 - [ ] Buscar Cargos
 
-===========================================================================
-
 ### Tela de funcionários
 
 <h1>
@@ -108,3 +106,18 @@ Além disso:
 * Uma IDE para rodar a API
 
 ### Rodando o Front-End
+
+```bash
+# Clone esse repositorio
+$ git clone <https://github.com/IgormBonfim/Projeto-CRUD-Gerenciamento-de-Funcionarios.git>
+
+# Acesse a pasta do projeto no terminal
+$ cd Front-end Angular
+
+# Instale s dependências
+$ npm install
+
+#Execute a aplicação no modo de desenvolvimento
+$ npm run start
+
+#O servidor iniciará na porta padrão:4200 - acesse <http://localhost:4200>
