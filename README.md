@@ -105,19 +105,66 @@ Além disso:
 * Um editor de texto
 * Uma IDE para rodar a API
 
+### Testando o projeto
+
+```bash
+# Clone o repositorio
+$ git clone <https://github.com/IgormBonfim/Projeto-CRUD-Gerenciamento-de-Funcionarios.git>
+```
+
 ### Rodando o Front-End
 
 ```bash
-# Clone esse repositorio
-$ git clone <https://github.com/IgormBonfim/Projeto-CRUD-Gerenciamento-de-Funcionarios.git>
-
 # Acesse a pasta do projeto no terminal
 $ cd Front-end Angular
 
-# Instale s dependências
+# Instale as dependências
 $ npm install
 
-#Execute a aplicação no modo de desenvolvimento
+# Execute a aplicação no modo de desenvolvimento
 $ npm run start
 
-#O servidor iniciará na porta padrão:4200 - acesse <http://localhost:4200>
+# O servidor iniciará na porta padrão:4200 - acesse <http://localhost:4200>
+```
+
+### Rodando a API
+Primeiramente será necessário configurar o banco de dados.
+
+```bash
+# Crie o schema no banco de dados
+create schema `dbprojetogerenciamento`;
+
+# Crie a tabela de cargos no banco de dados
+CREATE TABLE `cargo` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `dta_cargo` date NOT NULL,
+  `nome_cargo` varchar(50) NOT NULL,
+  `perm` varchar(50) NOT NULL,
+  `setor` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`));
+
+# Crie a tabela de funcionários no banco de dados
+CREATE TABLE `funcionario` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `cpf` varchar(50) NOT NULL,
+  `dta_funcionario` date NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `salario` varchar(50) NOT NULL,
+  `telefone` varchar(50) NOT NULL,
+  `cargo_id` bigint NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK1mmiur94efkujcsaab0cdgskv` (`cargo_id`),
+  CONSTRAINT `FK1mmiur94efkujcsaab0cdgskv` FOREIGN KEY (`cargo_id`) REFERENCES `cargo` (`id`));
+  ```
+
+* Configure a conexão da API com o banco de dados (src/main/resources/application.properties)
+
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/dbprojetogerenciamento?useTimezone=true&serverTimezone=UTC
+spring.datasource.username=YOURUSERNAME
+spring.datasource.password=YOURPASSWORD
+
+spring.jpa.hibernate.ddl-auto=update
+```
+
+* Execute a API;
