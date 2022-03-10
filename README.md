@@ -22,8 +22,14 @@
 
 ===========================================================================
 
-### Tela de funcionários
+#### Tela de funcionários
 
 <h1>
     <img src="./Imagens Readme/telafuncionarios.png">
+</h1>
+
+### Cadastro de novo funcionário
+
+<h1>
+    <img src="./Imagens Readme/cadastrarfuncionario.gif">
 </h1>

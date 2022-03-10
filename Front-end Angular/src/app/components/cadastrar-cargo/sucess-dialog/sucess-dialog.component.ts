@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -8,9 +9,14 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class SucessDialogComponent implements OnInit {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: string) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: string,
+              private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+  close() {
+    this.location.back();
   }
 
 }

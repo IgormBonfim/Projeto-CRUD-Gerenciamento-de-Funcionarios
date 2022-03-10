@@ -96,6 +96,7 @@ export class CadastrarFuncionarioComponent implements OnInit {
       if (this.formCadastro.value.id != 0) {
         this.service.update(this.formCadastro.value).subscribe(
           sucess => {
+            this.openDialog("Funcionário atualizado com sucesso")
             console.log("Funcionario atualizado");
             console.log(this.formCadastro.value);
 
@@ -103,7 +104,7 @@ export class CadastrarFuncionarioComponent implements OnInit {
         )
       } else if (this.validaCadastro()){
         this.service.create(this.formCadastro.value).subscribe(
-          sucess => this.openDialog("Funcionario cadastrado com sucesso")
+          sucess => this.openDialog("Funcionário cadastrado com sucesso")
         );
         console.log('Funcionario cadastrado');
         console.log(this.formCadastro.value);

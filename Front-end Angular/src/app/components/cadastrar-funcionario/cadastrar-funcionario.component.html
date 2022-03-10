@@ -9,7 +9,7 @@
         <mat-grid-tile [colspan]="2" rowspan="1">
           <mat-form-field class="campo" appearance="fill">
             <mat-label>Nome Completo</mat-label>
-            <input matInput formControlName="name" required minlength="5">
+            <input matInput formControlName="name" autocomplete="off" required minlength="5">
           </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="2" rowspan="4">
@@ -18,13 +18,13 @@
         <mat-grid-tile [colspan]="2" rowspan="1">
           <mat-form-field class="campo" appearance="fill">
             <mat-label>CPF</mat-label>
-            <input matInput formControlName="cpf" type="number">
+            <input matInput autocomplete="off" formControlName="cpf" type="number">
           </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="2" rowspan="1">
           <mat-form-field class="campo" appearance="fill">
             <mat-label>Telefone</mat-label>
-            <input matInput formControlName="telefone" type="number">
+            <input matInput autocomplete="off" formControlName="telefone" type="number">
             <mat-icon matSuffix>phone</mat-icon>
           </mat-form-field>
         </mat-grid-tile>
@@ -41,7 +41,7 @@
         <mat-grid-tile [colspan]="2" rowspan="1">
           <mat-form-field class="campo" appearance="fill" floatLabel="always">
             <mat-label>Salário</mat-label>
-            <input matInput formControlName="salario" placeholder="0" type="number" class="example-right-align" >
+            <input matInput autocomplete="off" formControlName="salario" placeholder="0" type="number" class="example-right-align" >
             <span matPrefix>R$&nbsp;</span>
             <span matSuffix>,00</span>
           </mat-form-field>
