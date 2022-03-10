@@ -81,3 +81,13 @@
 <h1>
     <img src="./Imagens Readme/bdcargos.png">
 </h1>
+
+===========================================================================
+
+## Pré-requisitos
+
+Alguns pré-requisitos para executar o projeto são:
+
+* Node.js
+* Java
+* Git
