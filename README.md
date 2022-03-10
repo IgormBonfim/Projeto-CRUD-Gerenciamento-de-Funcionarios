@@ -25,6 +25,7 @@
 - [x] Listar Funcionários
 - [x] Atualizar Funcionário
 - [x] Excluir Funcionário
+- [x] Cadastro único por nome, CPF e telefone
 - [ ] Organizar Funcionários por ordem alfabética
 - [ ] Buscar Funcionários
 
