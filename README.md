@@ -2,6 +2,15 @@
 
 <p>Projeto CRUD de gerenciamento de funcionários desenvolvido com Angular, Spring e MySQL. Com fins de desenvolvimento pessoal</p> 
 
+### Tecnologias utilizadas
+
+* TypeScript
+* Angular
+* Angular Material
+* Java
+* Spring
+* MySQL
+
 ===========================================================================
 
 ## Funcionalidades
@@ -91,3 +100,11 @@ Alguns pré-requisitos para executar o projeto são:
 * Node.js
 * Java
 * Git
+* MySQL
+
+Além disso:
+
+* Um editor de texto
+* Uma IDE para rodar a API
+
+### Rodando o Front-End
