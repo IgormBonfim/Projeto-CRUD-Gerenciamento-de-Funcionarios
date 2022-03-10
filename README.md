@@ -4,7 +4,7 @@
 
 ===========================================================================
 
-### Funcionalidades
+## Funcionalidades
 
 - [x] Cadastrar Funcionário
 - [x] Listar Funcionários
