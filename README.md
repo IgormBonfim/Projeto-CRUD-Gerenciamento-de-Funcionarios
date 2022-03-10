@@ -28,32 +28,44 @@
     <img src="./Imagens Readme/telafuncionarios.png">
 </h1>
 
-### Cadastrando novo funcionário
+### Cadastrando um novo funcionário
 
 <h1>
     <img src="./Imagens Readme/cadastrarfuncionario.gif">
 </h1>
 
-### Atualizando funcionário
+### Atualizando um funcionário
 
 <h1>
     <img src="./Imagens Readme/atualizarfuncionario.gif">
 </h1>
 
-### Removendo funcionário
+### Removendo um funcionário
 
 <h1>
     <img src="./Imagens Readme/removerfuncionario.gif">
 </h1>
 
-### Tentando cadastrar funcionário com CPF já cadastrado
+### Tentando cadastrar funcionário com um CPF já cadastrado
 
 <h1>
     <img src="./Imagens Readme/cpfunico.gif">
 </h1>
 
-### Cadastrando novo cargo
+### Cadastrando um novo cargo
 
 <h1>
     <img src="./Imagens Readme/cadastrarcargo.gif">
+</h1>
+
+### Atualizando um cargo
+
+<h1>
+    <img src="./Imagens Readme/atualizarcargo.gif">
+</h1>
+
+### Removendo um cargo
+
+<h1>
+    <img src="./Imagens Readme/removercargo.gif">
 </h1>
