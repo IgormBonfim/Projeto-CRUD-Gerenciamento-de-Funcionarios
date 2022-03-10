@@ -69,3 +69,15 @@
 <h1>
     <img src="./Imagens Readme/removercargo.gif">
 </h1>
+
+### Tabela de funcionários no banco de dados
+
+<h1>
+    <img src="./Imagens Readme/bdfuncionarios.png">
+</h1>
+
+### Tabela de cargos no banco de dados
+
+<h1>
+    <img src="./Imagens Readme/bdcargos.png">
+</h1>
