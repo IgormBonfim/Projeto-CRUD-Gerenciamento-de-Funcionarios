@@ -2,6 +2,16 @@
 
 * [Sobre](#Sobre)
 * [Funcionalidades](#funcionalidades)
+    * [Tela de Funcionários](#tela-de-funcionários)
+    * [Cadastrar Funcionário](#cadastrando-um-novo-funcionário)
+    * [Atualizar Funcionário](#atualizando-um-funcionário)
+    * [Remover Funcionário](#removendo-um-funcionário)
+    * [CPF já cadastrado](#tentando-cadastrar-funcionário-com-um-cpf-já-cadastrado)
+    * [Cadastrar Cargo](#cadastrando-um-novo-cargo)
+    * [Atualizar Cargo](#atualizando-um-cargo)
+    * [Remover Cargo](#removendo-um-cargo)
+    * [Tabela de Funcionário no Banco de dados](#tabela-de-funcionários-no-banco-de-dados)
+    * [Tabela de Cargos no Banco de dados](#tabela-de-cargos-no-banco-de-dados)
 * [Teste o Projeto](#teste-o-projeto)
 
 
@@ -174,3 +184,7 @@ $ npm run start
 
 # O servidor iniciará na porta padrão:4200 - acesse <http://localhost:4200>
 ```
+
+## Nota
+
+Todas as informações foram geradas aleatoriamente em utilizando um [gerador de pessoas](https://www.4devs.com.br/gerador_de_pessoas)
