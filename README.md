@@ -1,6 +1,6 @@
 # Projeto CRUD Gerenciamento de Funcionários
 
-* [Sobre](#Sobre)
+* [Stack utilizada](#stack-utilizada)
 * [Funcionalidades](#funcionalidades)
     * [Tela de Funcionários](#tela-de-funcionários)
     * [Cadastrar Funcionário](#cadastrando-um-novo-funcionário)
@@ -13,9 +13,6 @@
     * [Tabela de Funcionário no Banco de dados](#tabela-de-funcionários-no-banco-de-dados)
     * [Tabela de Cargos no Banco de dados](#tabela-de-cargos-no-banco-de-dados)
 * [Teste o Projeto](#teste-o-projeto)
-
-
-## Sobre
 
 ### Stack utilizada:
 
