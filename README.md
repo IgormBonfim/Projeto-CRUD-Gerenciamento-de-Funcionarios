@@ -4,20 +4,18 @@
 * [Funcionalidades](#funcionalidades)
 * [Teste o Projeto](#teste-o-projeto)
 
-===========================================================================
 
 ## Sobre
 
-### Stack:
+### Stack utilizada:
 
-* TypeScript
-* Angular
-* Angular Material
-* Java
-* Spring
-* MySQL
-
-===========================================================================
+<div style="display: inline_block">
+    <img aling="center" alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+    <img aling="center" alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+    <img aling="center" alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+    <img aling="center" alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+    <img aling="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
+</div><br>
 
 ## Funcionalidades
 
