@@ -3,6 +3,7 @@ package com.igor.crudfuncionariosspring.controller;
 
 import com.igor.crudfuncionariosspring.model.Cargo;
 import com.igor.crudfuncionariosspring.repository.CargoRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,6 +32,7 @@ public class CargoController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Cargo create(@RequestBody Cargo cargo) {return repository.save(cargo);}
 
     @PutMapping(value = "/{id}")

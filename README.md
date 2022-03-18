@@ -184,4 +184,4 @@ $ npm run start
 
 ## Nota
 
-Todas as informações foram geradas aleatoriamente em utilizando um [gerador de pessoas](https://www.4devs.com.br/gerador_de_pessoas)
+Todas as informações foram geradas aleatoriamente em utilizando um [gerador de pessoas](https://www.4devs.com.br/gerador_de_pessoas).

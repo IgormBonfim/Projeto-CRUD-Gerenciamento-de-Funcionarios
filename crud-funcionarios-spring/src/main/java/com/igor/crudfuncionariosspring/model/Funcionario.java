@@ -11,7 +11,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity (name = "funcionario")
+@Entity
 public class Funcionario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

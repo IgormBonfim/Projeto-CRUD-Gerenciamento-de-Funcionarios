@@ -3,6 +3,7 @@ package com.igor.crudfuncionariosspring.controller;
 
 import com.igor.crudfuncionariosspring.model.Funcionario;
 import com.igor.crudfuncionariosspring.repository.FuncionarioRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,6 +33,7 @@ public class FuncionarioController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Funcionario create(@RequestBody Funcionario funcionario) {
         return repository.save(funcionario);
     }
